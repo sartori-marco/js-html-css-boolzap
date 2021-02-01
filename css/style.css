@@ -10,14 +10,6 @@ body{
   background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
 }
 
-.float-right{
-  float: right;
-}
-
-.float-left{
-  float: left;
-}
-
 .style-contatto{
   font-weight: bold;
   font-family: sans-serif;
@@ -63,18 +55,25 @@ body{
 
 .utente .user img{
   vertical-align: middle;
+
 }
 
 .user span{
   font-size: 110%;
   padding-left: 15px;
   font-weight: bold;
+
+}
+
+.user{
+  cursor: pointer;
 }
 
 .utente .icons i{
   padding-right: 20px;
   font-size: 130%;
   color: lightgrey;
+  cursor: pointer;
 }
 
 
@@ -118,6 +117,7 @@ body{
   height: calc(100% - 230px);
   background-color: white;
   overflow-y: scroll;
+  cursor: pointer;
 }
 
 .contacts .contact img{
@@ -127,7 +127,9 @@ body{
   vertical-align: middle;
 }
 
-
+.contact:hover{
+  background-color: lightgrey;
+}
 
 
 /********** /BOX LEFT */
@@ -145,6 +147,7 @@ body{
 .utente-chat .contatto{
   display: flex;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .utente-chat .contatto img{
@@ -163,17 +166,36 @@ body{
   padding-right: 15px;
   color: lightgrey;
   font-size: 130%;
+  cursor: pointer;
 }
 
 
 .chat{
+  width: 100%;
   height: calc(100% - 200px);
   background-image: url(../img/mine.jpg);
   overflow-y: scroll;
 
 }
 
+.chat .messaggio{
+  width: 350px;
+  border-radius: 50px;
 
+}
+
+.chat .messaggio .inviato{
+  background-color: rgb(52, 186, 130);
+  float: right;
+  clear: both;
+
+}
+
+.chat .messaggio .ricevuto{
+  background-color: rgb(60, 196, 196);
+  float: left;
+  clear: both;
+}
 
 .message{
   height: 100px;
@@ -192,6 +214,7 @@ body{
 .message i{
   color: lightgrey;
   font-size: 40px;
+  cursor: pointer;
 }
 
 
