@@ -17,7 +17,7 @@ body{
   height: 100vh;
   display: flex;
   margin: auto;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .box-left{
@@ -29,7 +29,7 @@ body{
 .box-right{
   width: 70%;
   margin-top: 30px;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 /********** BOX LEFT */
@@ -51,7 +51,25 @@ body{
 .contacts{
   height: calc(100% - 250px);
   background-color: pink;
+  overflow-y: scroll;
+}
+/********** /BOX LEFT */
+
+/****************** BOX RIGHT */
+.utente-chat{
+  height: 100px;
+  background-color: green;
 }
 
+.chat{
+  height: calc(100% - 200px);
+  background-image: url('img/mine.jpg)';
+}
+.message{
+  height: 100px;
+  background-color: blue;
+}
+
+/******************* /BOX RIGHT */
 
 /*  */
