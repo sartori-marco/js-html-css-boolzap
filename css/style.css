@@ -10,10 +10,13 @@ body{
   background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
 }
 
-/* .avatar{
-  width: 60px;
-  border-radius: 20px;
-} */
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
+}
 
 /* / REGOLE GENERALI */
 .container{
@@ -47,22 +50,22 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
 }
 
 .utente .avatar{
   width: 60px;
-  border-radius: 20px;
+  border-radius: 50%;
   padding-left: 5px;
 }
 
-.utente h2{
-
+.user span{
+  font-size: 110%;
+  padding-left: 15px;
+  font-weight: bold;
 }
 
-.utente .icons{
-  padding-right: 15px;
+.utente .icons i{
+  padding-right: 20px;
   font-size: 130%;
   color: lightgrey;
 }
@@ -70,6 +73,7 @@ body{
 
 .notification{
   width: 100%;
+  height: 100px;
   background-color: rgb(5, 171, 232);
   display: flex;
   align-items: center;
@@ -84,11 +88,9 @@ body{
   background-color: white;
 }
 
-.notification h2{
-}
-
-.notification h3{
-  flex-wrap: wrap;
+.notification .testo{
+  display: flex;
+  flex-direction: column;
 }
 
 .search{
