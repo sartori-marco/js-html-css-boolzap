@@ -10,6 +10,10 @@ body{
   background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
 }
 
+/* .avatar{
+  width: 60px;
+  border-radius: 20px;
+} */
 
 /* / REGOLE GENERALI */
 .container{
@@ -20,11 +24,7 @@ body{
   /* background-color: red; */
 }
 
-.box-left{
-  width: 30%;
-  margin-top: 30px;
-  background-color: white;
-}
+
 
 .box-right{
   width: 70%;
@@ -33,14 +33,62 @@ body{
 }
 
 /********** BOX LEFT */
-.utente{
-  height: 100px;
-  background-color: yellow;
+.box-left{
+  width: 30%;
+  margin-top: 30px;
+  background-color: white;
+
 }
 
-.notification{
+.utente{
   height: 100px;
-  background-color: blue;
+  width: 100%;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.utente .avatar{
+  width: 60px;
+  border-radius: 20px;
+  padding-left: 5px;
+}
+
+.utente h2{
+
+}
+
+.utente .icons{
+  padding-right: 15px;
+  font-size: 130%;
+  color: lightgrey;
+}
+
+
+.notification{
+  width: 100%;
+  background-color: rgb(5, 171, 232);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.notification i{
+  font-size: 50px;
+  border-radius: 50%;
+  color: rgb(5, 171, 232);
+  margin: 10px 10px;
+  background-color: white;
+}
+
+.notification h2{
+}
+
+.notification h3{
+  flex-wrap: wrap;
 }
 
 .search{
@@ -63,7 +111,10 @@ body{
 
 .chat{
   height: calc(100% - 200px);
-  background-image: url('img/mine.jpg)';
+  /* background-image: url('img/mine.jpg'); */
+  background-color: grey;
+  overflow-y: scroll;
+
 }
 .message{
   height: 100px;
