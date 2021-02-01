@@ -32,5 +32,26 @@ body{
   background-color: grey;
 }
 
+/********** BOX LEFT */
+.utente{
+  height: 100px;
+  background-color: yellow;
+}
+
+.notification{
+  height: 100px;
+  background-color: blue;
+}
+
+.search{
+  height: 50px;
+  background-color: green;
+}
+
+.contacts{
+  height: calc(100% - 250px);
+  background-color: pink;
+}
+
 
 /*  */
