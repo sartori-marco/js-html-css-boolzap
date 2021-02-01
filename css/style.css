@@ -73,7 +73,6 @@ body{
 
 .notification{
   width: 100%;
-  height: 100px;
   background-color: rgb(5, 171, 232);
   display: flex;
   align-items: center;
@@ -81,7 +80,7 @@ body{
 }
 
 .notification i{
-  font-size: 50px;
+  font-size: 40px;
   border-radius: 50%;
   color: rgb(5, 171, 232);
   margin: 10px 10px;
@@ -94,22 +93,77 @@ body{
 }
 
 .search{
-  height: 50px;
+
   background-color: green;
 }
 
+.search i{
+  font-size: 110%;
+  margin: 10px 10px;
+}
+.search input{
+  font-size: 120%;
+  width: 90%;
+}
+
 .contacts{
-  height: calc(100% - 250px);
+  height: calc(100% - 200px);
   background-color: pink;
   overflow-y: scroll;
+
 }
+
+.contacts .contact img{
+  width: 70px;
+  border-radius: 50%;
+  margin: 10px 10px;
+}
+
+
 /********** /BOX LEFT */
 
 /****************** BOX RIGHT */
 .utente-chat{
   height: 100px;
+  width: 100%;
   background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.utente-chat .contatto{
+  display: flex;
+  margin-left: 10px;
+}
+
+.utente-chat .contatto img{
+  width: 60px;
+  border-radius: 50%;
+}
+
+.utente-chat .dati-contatto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.utente-chat .icone-contatto i{
+  padding-right: 15px;
+  color: grey;
+  font-size: 130%;
+}
+
+
+
+
+
+
+
+
+
+
 
 .chat{
   height: calc(100% - 200px);
@@ -118,10 +172,28 @@ body{
   overflow-y: scroll;
 
 }
+
+
+
 .message{
   height: 100px;
+  width: 100%;
   background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.message input{
+  width: 80%;
+  height: 50%
+}
+
+.message i{
+  color: grey;
+  font-size: 40px;
+}
+
 
 /******************* /BOX RIGHT */
 
