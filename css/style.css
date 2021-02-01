@@ -18,13 +18,18 @@ body{
   float: left;
 }
 
+.style-contatto{
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
 /* / REGOLE GENERALI */
 .container{
   width: 80%;
   height: 100vh;
   display: flex;
   margin: auto;
-  /* background-color: red; */
 }
 
 
@@ -32,7 +37,6 @@ body{
 .box-right{
   width: 70%;
   margin-top: 30px;
-  /* background-color: grey; */
 }
 
 /********** BOX LEFT */
@@ -46,7 +50,6 @@ body{
 .utente{
   height: 100px;
   width: 100%;
-  background-color: yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +59,10 @@ body{
   width: 60px;
   border-radius: 50%;
   padding-left: 5px;
+}
+
+.utente .user img{
+  vertical-align: middle;
 }
 
 .user span{
@@ -93,13 +100,13 @@ body{
 }
 
 .search{
-
-  background-color: green;
+  margin: 15px 0;
 }
 
 .search i{
   font-size: 110%;
   margin: 10px 10px;
+  color: lightgrey;
 }
 .search input{
   font-size: 120%;
@@ -107,17 +114,20 @@ body{
 }
 
 .contacts{
-  height: calc(100% - 200px);
-  background-color: pink;
+  width: 100%;
+  height: calc(100% - 230px);
+  background-color: white;
   overflow-y: scroll;
-
 }
 
 .contacts .contact img{
   width: 70px;
   border-radius: 50%;
   margin: 10px 10px;
+  vertical-align: middle;
 }
+
+
 
 
 /********** /BOX LEFT */
@@ -126,7 +136,7 @@ body{
 .utente-chat{
   height: 100px;
   width: 100%;
-  background-color: green;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,24 +161,14 @@ body{
 
 .utente-chat .icone-contatto i{
   padding-right: 15px;
-  color: grey;
+  color: lightgrey;
   font-size: 130%;
 }
 
 
-
-
-
-
-
-
-
-
-
 .chat{
   height: calc(100% - 200px);
-  /* background-image: url('img/mine.jpg'); */
-  background-color: grey;
+  background-image: url(../img/mine.jpg);
   overflow-y: scroll;
 
 }
@@ -178,7 +178,7 @@ body{
 .message{
   height: 100px;
   width: 100%;
-  background-color: blue;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -190,7 +190,7 @@ body{
 }
 
 .message i{
-  color: grey;
+  color: lightgrey;
   font-size: 40px;
 }
 
