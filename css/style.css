@@ -178,24 +178,28 @@ body{
 
 }
 
-.chat .messaggio{
-  width: 350px;
-  border-radius: 50px;
-
-}
-
 .chat .messaggio .inviato{
+  max-height: 500px;
   background-color: rgb(52, 186, 130);
+  width: 250px;
   float: right;
   clear: both;
-
+  margin: 30px 100px;
+  padding: 20px 20px;
+  border-radius: 20px;
 }
 
 .chat .messaggio .ricevuto{
-  background-color: rgb(60, 196, 196);
+  max-height: 500px;
+  background-color: white;
+  width: 250px;
   float: left;
   clear: both;
+  margin: 30px 100px;
+  padding: 20px 20px;
+  border-radius: 20px;
 }
+
 
 .message{
   height: 100px;
