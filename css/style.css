@@ -179,25 +179,25 @@ body{
 }
 
 .chat .messaggio .inviato{
-  max-height: 500px;
   background-color: rgb(52, 186, 130);
-  width: 250px;
+  max-width: 49%;
   float: right;
   clear: both;
-  margin: 30px 100px;
+  margin: 30px 10px;
   padding: 20px 20px;
   border-radius: 20px;
+  text-align: right;
 }
 
 .chat .messaggio .ricevuto{
-  max-height: 500px;
   background-color: white;
-  width: 250px;
+  max-width: 49%;
   float: left;
   clear: both;
-  margin: 30px 100px;
+  margin: 30px 10px;
   padding: 20px 20px;
   border-radius: 20px;
+  text-align: left;
 }
 
 
