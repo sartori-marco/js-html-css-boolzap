@@ -178,26 +178,28 @@ body{
 
 }
 
-.chat .messaggio .inviato{
-  background-color: rgb(52, 186, 130);
+.chat .messaggio {
   max-width: 49%;
-  float: right;
-  clear: both;
-  margin: 30px 10px;
   padding: 20px 20px;
   border-radius: 20px;
-  text-align: right;
+}
+
+.chat .messaggio .inviato{
+  background-color: rgb(52, 186, 130);
+  float: right;
+  clear: both;
+  /* margin: 30px 10px;
+  padding: 20px 20px; */
+
 }
 
 .chat .messaggio .ricevuto{
   background-color: white;
-  max-width: 49%;
   float: left;
   clear: both;
-  margin: 30px 10px;
-  padding: 20px 20px;
-  border-radius: 20px;
-  text-align: left;
+  /* margin: 30px 10px;
+  padding: 20px 20px; */
+
 }
 
 

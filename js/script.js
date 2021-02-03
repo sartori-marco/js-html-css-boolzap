@@ -5,6 +5,7 @@ var app = new Vue({
       {
         nome: 'Michele',
         avatar: 'img/avatar_1.jpg',
+        // visible: true,
         messaggio:[
           {
             testo: 'ciao',
@@ -14,11 +15,23 @@ var app = new Vue({
       },
       {
         nome: 'Fabio',
-        avatar: 'img/avatar_2.jpg'
+        avatar: 'img/avatar_2.jpg',
+        messaggio:[
+          {
+            testo: 'porta fuori il cane',
+            stato: 'ricevuto'
+          }
+        ]
       },
       {
         nome: 'Alessia',
-        avatar: 'img/avatar_3.jpg'
+        avatar: 'img/avatar_3.jpg',
+        messaggio:[
+          {
+            testo: 'vai a prendere il pane',
+            stato: 'inviato'
+          }
+        ]
       },
       {
         nome: 'Luca',
@@ -40,7 +53,13 @@ var app = new Vue({
         nome: 'Giorgio',
         avatar: 'img/avatar_8.jpg'
       },
-    ]
+    ],
+    contatore: 0
+  },
+  methods:{
+    chatContatti(index){
+      this.contatore = index;
+    }
   }
 
 

@@ -51,7 +51,7 @@
       <!-- / SEARCH -->
       <!-- CONTACTS -->
       <div class="contacts">
-        <div v-for="(user,index) in users" class="contact">
+        <div @click="chatContatti(index)" v-for="(user,index) in users" class="contact">
           <img :src="user.avatar" alt="avatar">
           {{user.nome}}
         </div>
@@ -64,10 +64,10 @@
       <!-- UTENTE CHAT -->
       <div class="utente-chat">
         <div class="contatto">
-          <img src="img/avatar_1.jpg" alt="avatar">
+          <img :src="users[contatore].avatar" alt="avatar">
           <div class="dati-contatto">
-          <span class="style-contatto">Michele</span>
-          <span>Ultimo accesso oggi alle:</span>
+            <span class="style-contatto">Michele</span>
+            <span>Ultimo accesso oggi alle:</span>
           </div>
         </div>
         <!-- ICONE -->
@@ -82,13 +82,15 @@
       <!-- CHAT -->
       <div class="chat">
         <!-- MESSAGGIO -->
-        <div class="messaggio">
-          <div class="inviato">
+        <div v-for="(mes,index) in users[contatore].messaggio" class="messaggio" :messaggio="(mes.stato == 'ricevuto') ? 'ricevuto' : 'inviato'">
+          {{ mes.testo }}
+
+          <!-- <div class="inviato">
             ciao
           </div>
           <div class="ricevuto">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
+          </div> -->
         </div>
         <!-- /MESSAGGIO -->
       </div>
