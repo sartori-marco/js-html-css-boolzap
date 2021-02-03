@@ -66,7 +66,7 @@
         <div class="contatto">
           <img :src="users[contatore].avatar" alt="avatar">
           <div class="dati-contatto">
-            <span class="style-contatto">Michele</span>
+            <span class="style-contatto">{{ users[contatore].nome }}</span>
             <span>Ultimo accesso oggi alle:</span>
           </div>
         </div>
@@ -98,7 +98,7 @@
       <!-- MESSAGE -->
       <div class="message">
           <i class="fas fa-smile"></i>
-          <input type="text" placeholder="Scrivi un messaggio">
+          <input type="text" placeholder="Scrivi un messaggio..." v-model="testoMes" @keyup.enter="inserimentoMessaggio">
           <i class="fas fa-microphone"></i>
       </div>
       <!-- / MESSAGE -->

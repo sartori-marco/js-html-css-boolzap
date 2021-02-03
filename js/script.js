@@ -54,11 +54,17 @@ var app = new Vue({
         avatar: 'img/avatar_8.jpg'
       },
     ],
-    contatore: 0
+    contatore: 0,
+    testoMes: ''
   },
   methods:{
     chatContatti(index){
       this.contatore = index;
+    },
+
+    inserimentoMessaggio(){
+      this.users[this.contatore].messaggio.push({ testo: this.testoMes });
+      this.testoMes = '';
     }
   }
 
