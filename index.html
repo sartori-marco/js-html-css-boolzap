@@ -82,7 +82,7 @@
       <!-- CHAT -->
       <div class="chat">
         <!-- MESSAGGIO -->
-        <div v-for="(mes,index) in users[contatore].messaggio" class="messaggio" :messaggio="(mes.stato == 'ricevuto') ? 'ricevuto' : 'inviato'">
+        <div v-for="(mes,index) in users[contatore].messaggio" class="messaggio" :class="(mes.stato == 'ricevuto') ? 'ricevuto' : 'inviato'">
           {{ mes.testo }}
 
           <!-- <div class="inviato">

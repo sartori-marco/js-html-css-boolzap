@@ -184,21 +184,21 @@ body{
   border-radius: 20px;
 }
 
-.chat .messaggio .inviato{
+.inviato{
   background-color: rgb(52, 186, 130);
   float: right;
   clear: both;
-  /* margin: 30px 10px;
-  padding: 20px 20px; */
+  margin: 30px 10px;
+  padding: 20px 20px;
 
 }
 
-.chat .messaggio .ricevuto{
+.ricevuto{
   background-color: white;
   float: left;
   clear: both;
-  /* margin: 30px 10px;
-  padding: 20px 20px; */
+  margin: 30px 10px;
+  padding: 20px 20px;
 
 }
 
