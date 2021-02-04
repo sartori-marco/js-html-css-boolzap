@@ -73,6 +73,7 @@ var app = new Vue({
       this.testoMes = '';
       setTimeout(this.rispostaMessaggio,1000);
     },
+    
     rispostaMessaggio(){
       this.users[this.contatore].messaggio.push({testo: 'ok', stato: 'ricevuto'} );
     },
