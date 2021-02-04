@@ -35,7 +35,13 @@ var app = new Vue({
       },
       {
         nome: 'Luca',
-        avatar: 'img/avatar_4.jpg'
+        avatar: 'img/avatar_4.jpg',
+        messaggio:[
+          {
+            testo: 'Aperitivo?',
+            stato: 'ricevuto'
+          }
+        ]
       },
       {
         nome: 'Stefano',
@@ -65,7 +71,11 @@ var app = new Vue({
     inserimentoMessaggio(){
       this.users[this.contatore].messaggio.push({ testo: this.testoMes });
       this.testoMes = '';
-    }
+      setTimeout(this.rispostaMessaggio,1000);
+    },
+    rispostaMessaggio(){
+      this.users[this.contatore].messaggio.push({testo: 'ok', stato: 'ricevuto'} );
+    },
   }
 
 
